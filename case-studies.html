@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V85P90MX4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', { 'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500 });
+    try { if (localStorage.getItem('glb-consent')==='granted') gtag('consent','update',{'analytics_storage':'granted','ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'}); } catch(e){}
+    gtag('js', new Date());
+    gtag('config', 'G-3V85P90MX4');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — Global Launch Base</title>
+  <meta name="description" content="How Global Launch Base has helped European companies and ecosystems explore, prepare for, and enter the Indian market." />
+  <meta property="og:title" content="Case Studies — Global Launch Base" />
+  <meta property="og:description" content="How GLB has helped European companies and ecosystems explore, prepare for, and enter the Indian market." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.globallaunchbase.com/case-studies" />
+  <meta property="og:image" content="https://globallaunchbase.com/images/og-default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Global Launch Base" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Case Studies — Global Launch Base" />
+  <meta name="twitter:description" content="How GLB has helped European companies and ecosystems explore, prepare for, and enter the Indian market." />
+  <meta name="twitter:image" content="https://globallaunchbase.com/images/og-default.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="canonical" href="https://globallaunchbase.com/case-studies" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .cs-hero { padding: var(--section-y) 0 var(--section-y-tight); }
+    .cs-hero h1 { font-family: var(--font-display); font-weight: 600; color: var(--navy-700); font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1.05; letter-spacing: -0.01em; margin: 0.6rem 0 0; max-width: 16ch; }
+    .cs-hero h1 em { font-style: italic; color: var(--green-700); }
+    .cs-lede { margin-top: 1.1rem; max-width: 60ch; color: var(--fg-muted); font-size: 1.15rem; }
+
+    .cs-case { padding: var(--section-y) 0; border-top: 1px solid var(--rule); }
+    .cs-alt { background: var(--cream-200); }
+    .cs-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; flex-wrap: wrap; }
+    .cs-index { font-family: var(--font-display); color: var(--saffron-700); font-weight: 600; font-size: 0.95rem; letter-spacing: 0.04em; margin-bottom: 0.5rem; }
+    .cs-case h2 { font-family: var(--font-display); font-weight: 600; color: var(--navy-700); font-size: clamp(1.8rem, 3.2vw, 2.6rem); line-height: 1.1; margin: 0; }
+    .cs-desc { margin-top: 0.35rem; color: var(--fg-muted); font-size: 1rem; }
+    .cs-tag { display: inline-block; margin-top: 0.4rem; font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green-700); }
+    .cs-logo { flex: 0 0 auto; height: 64px; display: flex; align-items: center; padding: 0.6rem 1rem; background: var(--bg-card); border: 1px solid var(--rule); border-radius: 12px; }
+    .cs-logo img { max-height: 36px; width: auto; }
+    .cs-logo img[src*="3minutesjob"] { max-height: 46px; }
+
+    .cs-body { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem 3rem; margin-top: 2.25rem; }
+    .cs-block { min-width: 0; }
+    .cs-block h3 { font-family: var(--font-body); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy-700); margin: 0 0 0.6rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--green-600); display: inline-block; }
+    .cs-block p { margin: 0; color: var(--fg); font-size: 1.02rem; line-height: 1.65; }
+    .cs-block.full { grid-column: 1 / -1; }
+
+    .cs-stats { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 0.4rem; }
+    .cs-stat { flex: 1 1 150px; min-width: 150px; background: var(--bg-card); border: 1px solid var(--rule); border-radius: 12px; padding: 1.1rem 1.2rem; }
+    .cs-stat:only-child { flex: 0 1 280px; }
+    .cs-stat .n { font-family: var(--font-display); font-weight: 700; color: var(--green-700); font-size: 2.1rem; line-height: 1; letter-spacing: -0.01em; }
+    .cs-stat .l { margin-top: 0.5rem; color: var(--fg-muted); font-size: 0.82rem; line-height: 1.4; }
+
+    .cs-quote { grid-column: 1 / -1; margin: 0.4rem 0 0; padding: 1.5rem 1.75rem; background: var(--cream-300); border-left: 3px solid var(--saffron-700); border-radius: 0 12px 12px 0; }
+    .cs-quote p { font-family: var(--font-display); font-style: italic; color: var(--navy-700); font-size: 1.25rem; line-height: 1.45; margin: 0; }
+    .cs-quote cite { display: block; margin-top: 0.8rem; font-style: normal; font-family: var(--font-body); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--green-700); }
+    .cs-quote cite span { color: var(--fg-muted); font-weight: 400; text-transform: none; letter-spacing: 0; }
+    .cs-quote + .cs-quote { margin-top: 1rem; }
+
+    .cs-cta { background: var(--navy-900); color: var(--fg-on-dark); text-align: center; padding: var(--section-y) 0; }
+    .cs-cta h2 { font-family: var(--font-display); font-weight: 600; color: var(--fg-on-dark); font-size: clamp(1.7rem, 3.5vw, 2.5rem); margin: 0; }
+    .cs-cta p { max-width: 54ch; margin: 1rem auto 1.6rem; color: var(--fg-on-dark-soft); font-size: 1.1rem; }
+
+    @media (max-width: 700px) {
+      .cs-body { grid-template-columns: 1fr; gap: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="/" aria-label="Global Launch Base — home"><img src="images/glb-logo.png" alt="Global Launch Base" /></a></div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/farm-accelerator">Farm Accelerator</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/case-studies" class="active">Case Studies</a></li>
+        <li><a href="/readiness-report" class="nav-cta">Readiness Report →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <div class="container">
+      <span class="eyebrow">Case Studies</span>
+      <h1>Operators, not advisors — <em>here's the proof.</em></h1>
+      <p class="cs-lede">From offshore teams to market-entry roadmaps, here's how we've helped European companies and ecosystems explore, prepare for, and enter the Indian market.</p>
+    </div>
+  </section>
+
+  <!-- 01 DUTCHBASECAMP -->
+  <section class="cs-case">
+    <div class="container">
+      <div class="cs-head">
+        <div>
+          <div class="cs-index">Case 01</div>
+          <h2>DutchBasecamp</h2>
+          <p class="cs-desc">Startup internationalisation</p>
+          <span class="cs-tag">Netherlands</span>
+        </div>
+        <div class="cs-logo"><img src="images/partner-dutchbasecamp.png" alt="DutchBasecamp" /></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-block">
+          <h3>The Challenge</h3>
+          <p>DutchBasecamp wanted to help its startups and scaleups explore expansion into India while reducing market-entry risk and deepening their understanding of the local market.</p>
+        </div>
+        <div class="cs-block">
+          <h3>How GLB Helped</h3>
+          <p>GLB delivered India market insights, market validation, ecosystem introductions, partner discovery, business matchmaking, and founder mentoring — including go-to-market training on cultural adaptation, GTM strategy, research and validation, and investor readiness.</p>
+        </div>
+        <div class="cs-block full">
+          <h3>The Outcome</h3>
+          <p>Between August 2021 and November 2023, GLB coached and prepared 163 startups from 27 countries across 17 verticals — one of DutchBasecamp's most well-received internationalisation programmes, with an average participant satisfaction of 9 out of 10. Founders left with stronger India market readiness, faster access to local networks, and far less uncertainty about whether and how to enter.</p>
+        </div>
+        <div class="cs-stats">
+          <div class="cs-stat"><div class="n">163</div><div class="l">Startups coached</div></div>
+          <div class="cs-stat"><div class="n">27</div><div class="l">Countries represented</div></div>
+          <div class="cs-stat"><div class="n">17</div><div class="l">Verticals</div></div>
+          <div class="cs-stat"><div class="n">9/10</div><div class="l">Avg. participant satisfaction</div></div>
+        </div>
+        <blockquote class="cs-quote">
+          <p>"I have had the pleasure of closely working with the Global Launch Base resources on several projects and programmes. Apart from having skilled speakers, the team has experience as entrepreneurs — it always shows, as they consistently take a proactive attitude and go the extra mile when working with us."</p>
+          <cite>Emilie Verbunt <span>· DutchBasecamp</span></cite>
+        </blockquote>
+        <blockquote class="cs-quote">
+          <p>"I underwent a Go-To-Market training by Global Launch Base experts and gained a comprehensive understanding of launching in the Indian market. It equipped me with theoretical knowledge and practical assistance, guiding me through each launch-planning step. The added benefit of a provided network in India helped establish crucial contacts for a successful market launch."</p>
+          <cite>Teresa Brancato <span>· IDEE GmbH</span></cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 CBNAGRO -->
+  <section class="cs-case cs-alt">
+    <div class="container">
+      <div class="cs-head">
+        <div>
+          <div class="cs-index">Case 02</div>
+          <h2>CBNagro.tech</h2>
+          <p class="cs-desc">AgriTech · post-harvest storage technology</p>
+          <span class="cs-tag">Romania</span>
+        </div>
+        <div class="cs-logo"><img src="images/case-cbnagro-logo.jpg" alt="CBNagro.tech" /></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-block">
+          <h3>The Challenge</h3>
+          <p>CBNagro.tech, which builds IoT-enabled monitoring and automation for grain storage, wanted to evaluate the Indian agriculture market and understand the real potential for its post-harvest technology there.</p>
+        </div>
+        <div class="cs-block">
+          <h3>How GLB Helped</h3>
+          <p>GLB ran a full India market assessment — agritech ecosystem research, customer and stakeholder identification, local partner exploration, and go-to-market and business-development guidance — culminating in a detailed readiness assessment of the opportunity.</p>
+        </div>
+        <div class="cs-block full">
+          <h3>The Outcome</h3>
+          <p>GLB gave CBNagro a clear, well-evidenced picture of the Indian post-harvest ecosystem, the openings for its solution, and the practical barriers to entry. With that clarity — and access to local insights and networks — the company was able to make a confident, informed call on timing rather than commit prematurely.</p>
+        </div>
+        <blockquote class="cs-quote">
+          <p>"Working with Global Launch Base and team gave us plenty of useful insights on the Indian market in a very short period of time, and helped us form meaningful connections within the country. Their enthusiasm and commitment has been of great help!"</p>
+          <cite>Ioana Ștefan <span>· CBN-Agro Tech</span></cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 NANO-TECH -->
+  <section class="cs-case">
+    <div class="container">
+      <div class="cs-head">
+        <div>
+          <div class="cs-index">Case 03</div>
+          <h2>Nano-Tech SpA</h2>
+          <p class="cs-desc">Advanced composite materials &amp; nanotechnology</p>
+          <span class="cs-tag">Italy</span>
+        </div>
+        <div class="cs-logo"><img src="images/case-nanotech-logo.jpg" alt="Nano-Tech SpA" /></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-block">
+          <h3>The Challenge</h3>
+          <p>Nano-Tech, which develops patented composite and nanomaterials for high-performance aerospace and automotive applications, wanted to evaluate the Indian market, identify strategic partners, gauge customer demand, and explore local talent and business development for future expansion.</p>
+        </div>
+        <div class="cs-block">
+          <h3>How GLB Helped</h3>
+          <p>GLB delivered India market research and opportunity assessment, industry ecosystem mapping, partner identification and introductions, business-development support, local hiring and talent exploration, and market-entry strategy guidance — producing an in-depth market study and a practical entry roadmap.</p>
+        </div>
+        <div class="cs-block full">
+          <h3>The Outcome</h3>
+          <p>Nano-Tech gained a comprehensive view of the Indian market for advanced composites — demand drivers, priority sectors, potential local partners, and routes to hiring — alongside a clear market-entry roadmap to inform its expansion planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 EIT -->
+  <section class="cs-case cs-alt">
+    <div class="container">
+      <div class="cs-head">
+        <div>
+          <div class="cs-index">Case 04</div>
+          <h2>EIT</h2>
+          <p class="cs-desc">Startup mentoring &amp; market expansion · European Institute of Innovation and Technology</p>
+          <span class="cs-tag">European Union</span>
+        </div>
+        <div class="cs-logo"><img src="images/partner-eit.png" alt="European Institute of Innovation &amp; Technology" /></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-block">
+          <h3>The Challenge</h3>
+          <p>Startups supported by EIT needed mentoring, business validation, and international market insight to strengthen their commercialisation and growth strategies.</p>
+        </div>
+        <div class="cs-block">
+          <h3>How GLB Helped</h3>
+          <p>Within the EIT Jumpstarter programme, GLB provided startup mentoring, business-model validation, market-entry guidance, expert evaluation and coaching, and international expansion support to founders across mobility, smart city, and technology. Beyond the cohort, GLB also supported Fermata in shaping its internationalisation strategy.</p>
+        </div>
+        <div class="cs-block full">
+          <h3>The Outcome</h3>
+          <p>Founders came away with improved business-model validation and commercialisation readiness, stronger market-entry preparedness and growth planning, and actionable expert feedback — better positioned for international expansion and investor engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 EU-INDIA INNOCENTER -->
+  <section class="cs-case">
+    <div class="container">
+      <div class="cs-head">
+        <div>
+          <div class="cs-index">Case 05</div>
+          <h2>EU-India InnoCenter</h2>
+          <p class="cs-desc">Market-entry support for European innovators</p>
+          <span class="cs-tag">EU · India</span>
+        </div>
+        <div class="cs-logo"><img src="images/case-euindia-innocenter-logo.jpg" alt="EU-India InnoCenter" /></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-block">
+          <h3>The Challenge</h3>
+          <p>European startups, SMEs, and technology companies needed local expertise, market intelligence, and trusted networks to evaluate, enter, and scale within the Indian market.</p>
+        </div>
+        <div class="cs-block">
+          <h3>How GLB Helped</h3>
+          <p>Through the "Prepare to Expand" programme, GLB delivered market-entry preparation, business coaching, India ecosystem introductions, partner identification, customer-discovery support, local network development, and scaling assistance across multiple cohorts of European founders.</p>
+        </div>
+        <div class="cs-block full">
+          <h3>The Outcome</h3>
+          <p>Across multiple "Prepare to Expand" cohorts, GLB supported 100+ European founders, leaving them with a markedly clearer understanding of the Indian market, practical next steps toward entry, and access to local partners and networks.</p>
+        </div>
+        <div class="cs-stats">
+          <div class="cs-stat"><div class="n">100+</div><div class="l">European founders supported</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 3MINUTESJOB -->
+  <section class="cs-case cs-alt">
+    <div class="container">
+      <div class="cs-head">
+        <div>
+          <div class="cs-index">Case 06</div>
+          <h2>3minutesjob.com</h2>
+          <p class="cs-desc">International recruitment platform</p>
+          <span class="cs-tag">Romania</span>
+        </div>
+        <div class="cs-logo"><img src="images/case-3minutesjob-logo.jpg" alt="3minutesjob.com" /></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-block">
+          <h3>The Challenge</h3>
+          <p>3minutesjob.com wanted to stand up and run an offshore resource centre to strengthen its operations, outbound outreach, and talent-acquisition capacity.</p>
+        </div>
+        <div class="cs-block">
+          <h3>How GLB Helped</h3>
+          <p>GLB built and managed a dedicated offshore team, providing recruitment and hiring support, outbound calling operations, business-development assistance, talent sourcing and onboarding, and ongoing operational support.</p>
+        </div>
+        <div class="cs-block full">
+          <h3>The Outcome</h3>
+          <p>The engagement expanded the company's operational capacity, strengthened its recruitment and talent-acquisition processes, sharpened lead generation and outbound business development, and supported scalable growth across its international hiring operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cs-cta">
+    <div class="container">
+      <h2>Is your business ready for India?</h2>
+      <p>Get a free, sector-specific 8-page report — market size, regulatory path, competitive map, and a recommended entry mode.</p>
+      <a href="/readiness-report" class="btn btn-arrow">Start your Readiness Report</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-mark" src="images/glb-mark.png" alt="" aria-hidden="true" />
+          <div class="footer-brand">Global Launch Base</div>
+          <p class="footer-tagline">International business expansion consultancy. We help European companies enter India — from validation to scale.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Site</h4>
+          <ul class="footer-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/farm-accelerator">Farm Accelerator</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/case-studies">Case Studies</a></li>
+            <li><a href="/readiness-report">Readiness Report</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-list">
+            <li><a href="mailto:info@globallaunchbase.com">info@globallaunchbase.com</a></li>
+            <li class="footer-social"><a href="https://www.linkedin.com/company/globallaunchbase/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a><a href="https://www.instagram.com/globallaunchbase/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 448 512" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Global Launch Base. All rights reserved.</span>
+        <span>Noida · Amsterdam</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="glb-consent" class="consent-banner" hidden>
+    <p class="consent-text">We use cookies to measure site traffic. Analytics stays off until you choose.</p>
+    <div class="consent-actions">
+      <button class="btn-consent decline" id="glb-decline">Decline</button>
+      <button class="btn-consent accept" id="glb-accept">Accept</button>
+    </div>
+  </div>
+  <script>
+  (function(){try{var c=localStorage.getItem('glb-consent');var b=document.getElementById('glb-consent');if(!c){b.hidden=false;}
+  function set(v){try{localStorage.setItem('glb-consent',v);}catch(e){}if(v==='granted'&&typeof gtag==='function'){gtag('consent','update',{'analytics_storage':'granted','ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});}b.hidden=true;}
+  document.getElementById('glb-accept').addEventListener('click',function(){set('granted');});
+  document.getElementById('glb-decline').addEventListener('click',function(){set('denied');});}catch(e){}})();
+  </script>
+</body>
+</html>
