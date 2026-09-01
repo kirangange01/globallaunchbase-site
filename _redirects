@@ -16,7 +16,7 @@
 /post/agritech-and-sustainable-agriculture                                                                                                       /resources/agritech-and-sustainable-agriculture                                                                                                       301
 /post/agritech-in-developing-economies                                                                                                           /resources/agritech-in-developing-economies                                                                                                           301
 /post/ai-and-machine-learning-in-precision-farming                                                                                               /resources/ai-and-machine-learning-in-precision-farming                                                                                               301
-/post/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-area                                                                      /resources/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-area                                                                      301
+/post/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-area                                                                      /resources/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-areas                                                                      301
 /post/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-areas                                                                     /resources/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-areas                                                                     301
 /post/bio-composting-techniques-market-scope-and-opportunity                                                                                     /resources/bio-composting-techniques-market-scope-and-opportunity                                                                                     301
 /post/biochar-as-a-bridge-between-rural-innovation-and-global-climate-goals                                                                      /resources/biochar-as-a-bridge-between-rural-innovation-and-global-climate-goals                                                                      301
@@ -105,6 +105,9 @@
 /post/why-conservationtech-needs-b2g-revenue-not-tokens-a-framework-for-india-market-entry                                                       /resources/why-conservationtech-needs-b2g-revenue-not-tokens-a-framework-for-india-market-entry                                                       301
 /post/why-indias-farmers-must-align-with-emerging-market-demands                                                                                 /resources/why-indias-farmers-must-align-with-emerging-market-demands                                                                                 301
 /post/why-the-next-wave-of-global-agri-innovation-will-come-from-farms                                                                           /resources/why-the-next-wave-of-global-agri-innovation-will-come-from-farms                                                                           301
+
+# --- Superseded duplicate (23 Aug draft -> 28 Aug final) ---
+/resources/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-area   /resources/beyond-pilots-building-hybrid-ownership-innovation-labs-in-rural-areas   301
 
 # --- Catch-all: any old post with no new equivalent goes to the library ---
 # Must stay LAST: Netlify applies the first matching rule.

@@ -1604,3 +1604,69 @@ section { padding: var(--section-y) 0; }
 .footer-social a{display:inline-flex;}
 .footer-social svg{width:22px;height:22px;}
 .partner-logo img[src*="caravantures"]{max-height:52px;}
+
+/* ---------- EVENTS STRIP (Where we'll be) ---------- */
+.events-strip {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--rule);
+}
+.event-item {
+  padding: 2.25rem 2.5rem 2.25rem 0;
+  border-right: 1px solid var(--rule);
+}
+.event-item:last-child { border-right: none; padding-left: 2.5rem; padding-right: 0; }
+.event-date {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+.event-item h3 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+  color: var(--fg-strong);
+  margin: 0 0 0.65rem;
+}
+.event-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--fg);
+  margin: 0 0 1.25rem;
+  max-width: 34em;
+}
+.event-link {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: var(--fg-strong);
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color var(--t-fast) var(--ease);
+}
+.event-link::after { content: "\2192"; transition: transform var(--t-fast) var(--ease); }
+.event-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.event-link:hover::after { transform: translateX(3px); }
+
+@media (max-width: 820px) {
+  .events-list { grid-template-columns: 1fr; }
+  .event-item {
+    padding: 2rem 0;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .event-item:last-child { padding-left: 0; border-bottom: none; }
+}
