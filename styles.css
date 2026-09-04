@@ -1670,3 +1670,6 @@ section { padding: var(--section-y) 0; }
   }
   .event-item:last-child { padding-left: 0; border-bottom: none; }
 }
+
+.events-list.one-up { grid-template-columns: 1fr; }
+.events-list.one-up .event-item { border-right: none; padding-right: 0; }
